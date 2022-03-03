@@ -1,16 +1,8 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import createLogger from 'redux-logger';
-import todo from './modules/todo';
+import { configureStore } from '@reduxjs/toolkit';
+import userReducer from './logins/signup';
 
-const loggerMiddleware = createLogger(); // initialize logger
-
-const createStoreWithMiddleware = applyMiddleware(
-  loggerMiddleware,
-)(createStore); // apply logger to redux
-
-const reducer = combineReducers({
-  todo,
+export default configureStore({
+  reducer: {
+    user: userReducer,
+  },
 });
-
-const configureStore = (initialState) => createStoreWithMiddleware(reducer, initialState);
-export default configureStore;
