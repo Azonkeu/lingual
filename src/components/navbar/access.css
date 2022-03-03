@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  margin-left: 10px;
+}
+
+.register {
+  outline: 0;
+  padding: 8px 1em;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #6adf76;
+  background-image: linear-gradient(to right, transparent 0%, #00c9ff 100%);
+  transition: all 240ms ease-in-out;
+  cursor: pointer;
+}
+
+.register:hover {
+  background-color: #00c9ff;
+}
+
+.register:not(:last-of-type) {
+  margin-right: 7px;
+}
+
+.login {
+  outline: 0;
+  padding: 8px 1em;
+  color: #222;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid #00c9ff;
+  transition: all 240ms ease-in-out;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #00c9ff;
+}
+
+.login:not(:last-of-type) {
+  margin-right: 7px;
+}
