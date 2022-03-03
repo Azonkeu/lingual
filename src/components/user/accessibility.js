@@ -4,7 +4,7 @@ import './access.css';
 
 const Accessibility = () => (
   <div className="container">
-    <NavLink className="login" activeclassname="activex" to="login">Login</NavLink>
+    <NavLink className="login" activeclassname="activex" to="logout">Logout</NavLink>
   </div>
 );
 

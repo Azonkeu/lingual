@@ -1,0 +1,28 @@
+.nav {
+  max-width: 100%;
+  height: 60px;
+  box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  max-width: 15%;
+  align-items: center;
+  color: rgb(121, 13, 228);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+}
+
+.middle {
+  display: flex;
+  flex: 6;
+  height: 100%;
+  max-width: 72%;
+}
+
+.right {
+  display: flex;
+  max-width: 18%;
+}
